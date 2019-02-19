@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Payment Form</title>
+    </head>
+    <body>
+      <div class="container">
+        <div class="card text-left mt-4">
+          <div class="card-header">
+            <h3><strong>Payment form</strong></h3>
+          </div>
+          <form id="payment">
+            <div class="card-body">
+              <div class="form">
+                  
+                    <div class="alert alert-danger" role="alert">
+                      <strong>Some fields are missing</strong>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-5">
+                        <label for="inputCard4">Card #</label>
+                        <input type="card" class="form-control" id="inputCard4" placeholder="XXXXXXXXXXXX">
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputCvc4">CVC #</label>
+                        <input type="cvc" class="form-control" id="inputCvc4" placeholder="0000">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputAmount4">Amount</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend"><strong>$</strong></span>
+                          </div>
+                        <input type="number" class="form-control" id="inputAmount4" placeholder="Amount">
+                      </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputFirstName">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstName">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputLastName">Last Name</label>
+                        <input type="text" class="form-control" id="inputLastName">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputState">State</label>
+                        <select id="inputState" type="text" class="custom-select">
+                          <option selected>Pick a state</option>
+                          <option value="1">Florida</option>
+                          <option value="2">Georgia</option>
+                          <option value="3">Tennessee</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputPostalCode">Postal Code</label>
+                        <input type="text" class="form-control" id="inputPostalCode">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <span><strong>We accept:</strong></span>
+                        <br><br>
+                        <div class="credits">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><i class="fab fa-cc-visa"></i></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-mastercard"></i></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-amex"></i></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                            <label class="form-check-label" for="inlineRadio4"><i class="fab fa-cc-discover"></i></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-2"></div>
+                      <div class="form-group col-md-6">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage"></textarea>
+                      </div>
+                    </div>
+                  
+              </div>
+            </div>
+              <div class="card-footer text-right">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+              </form>
+          </div>
+      </div>
+      <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
